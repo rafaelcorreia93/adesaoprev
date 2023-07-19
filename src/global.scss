@@ -39,6 +39,10 @@ body {
   }
 }
 
+.value-container {
+  display: flex;
+}
+
 // Estilo do slider
 
 
@@ -83,14 +87,26 @@ ion-range::part(bar-active) {
 // Holder value
 
 .value-holder {
-  display: inline-block;
+  display: inline-flex;
   font-size: 28px;
   padding: 15px;
-  border: 4px dashed #4B42A0;
+  border: 3px dashed #4B42A0;
   border-radius: 14px;
   background: #E9E9F5;
   margin-bottom: 20px;
+  margin-right: 10px;
   box-shadow: 6px 4px 13px 5px #E9E9F5;
   color: #3C2E88;
   font-family: 'Campton-Medium', 'arial', sans-serif;
+  width: 110px;
+  text-align: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+// Input
+
+.input-holder {
+  margin: 10% 7%;
 }
