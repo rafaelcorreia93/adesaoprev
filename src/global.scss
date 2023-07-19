@@ -42,3 +42,39 @@ body {
 .slider-card {
   margin: 5%;
 }
+
+
+// Estilo do slider
+
+ion-range {
+  --bar-height: 12px;
+  --knob-size: 50px;
+}
+
+
+ion-range::part(pin) {
+  background: #E33E5A;
+  color: #fff;
+  font-size: 16px;
+  line-height: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ion-range::part(pin)::before {
+  content: none;
+}
+
+ion-range::part(knob) {
+  background: #E33E5A;
+}
+
+ion-range::part(bar) {
+  background: #A4A5D5;
+  border-radius: 5px;
+}
+
+ion-range::part(bar-active) {
+  background: #3C2E88;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(60,46,136,1) 0%, rgba(227,62,90,1) 100%);
+}
