@@ -3,7 +3,8 @@
     <img src="../../assets/Vivest-Logo (fundo azul).svg" class="logo" alt="Logo da Vivest">
   </div>
   <div class="input-holder">
-    <ion-input [(ngModel)]="salario" type="tel" label="Salário" label-placement="floating" fill="outline" placeholder="Digite seu salário"></ion-input>
+    <input [(ngModel)]="salario" type="tel" label="Salário" placeholder="Digite seu salário" currencyMask
+    [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }">
   </div>
 
   <div class="slider-card">

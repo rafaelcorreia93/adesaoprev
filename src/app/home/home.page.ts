@@ -8,13 +8,14 @@ import ptBr from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { CurrencyPipe } from '@angular/common'
 registerLocaleData(ptBr);
+import { NgxCurrencyDirective } from "ngx-currency";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonicModule, FormsModule],
+  imports: [IonicModule, FormsModule, NgxCurrencyDirective],
   providers: [{provide: LOCALE_ID, useValue: 'pt-BR'}, CurrencyPipe]
 })
 export class HomePage {
@@ -22,7 +23,7 @@ export class HomePage {
 
   lastEmittedValue: RangeValue = 0.1;
   contribuicao = "";
-  salario = 3000;
+  salario = 0;
   percentual = 0.1;
 
   onIonInput(ev: Event) {
