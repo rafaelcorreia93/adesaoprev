@@ -39,12 +39,12 @@ body {
   }
 }
 
-.slider-card {
-  margin: 5%;
-}
-
-
 // Estilo do slider
+
+
+.slider-card {
+  margin: 5% 10%;
+}
 
 ion-range {
   --bar-height: 12px;
@@ -77,4 +77,20 @@ ion-range::part(bar-active) {
   background: #3C2E88;
   border-radius: 5px;
   background: linear-gradient(90deg, rgba(60,46,136,1) 0%, rgba(227,62,90,1) 100%);
+}
+
+
+// Holder value
+
+.value-holder {
+  display: inline-block;
+  font-size: 28px;
+  padding: 15px;
+  border: 4px dashed #4B42A0;
+  border-radius: 14px;
+  background: #E9E9F5;
+  margin-bottom: 20px;
+  box-shadow: 6px 4px 13px 5px #E9E9F5;
+  color: #3C2E88;
+  font-family: 'Campton-Medium', 'arial', sans-serif;
 }

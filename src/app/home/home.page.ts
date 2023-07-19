@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { RangeValue } from '@ionic/core';
+import { RangeCustomEvent } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -10,4 +12,10 @@ import { IonicModule } from '@ionic/angular';
 })
 export class HomePage {
   constructor() {}
+
+  lastEmittedValue: RangeValue = 0.1;
+
+  onIonChange(ev: Event) {
+    this.lastEmittedValue = (ev as RangeCustomEvent).detail.value;
+  }
 }
