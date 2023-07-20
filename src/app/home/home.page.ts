@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { RangeValue } from '@ionic/core';
 import { RangeCustomEvent } from '@ionic/angular';
