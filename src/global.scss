@@ -26,7 +26,7 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 
-body {
+body * {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
@@ -47,7 +47,7 @@ body {
 
 
 .slider-card {
-  margin: 5% 10%;
+  margin: 5%;
 }
 
 ion-range {
@@ -57,11 +57,17 @@ ion-range {
 
 
 ion-range::part(pin) {
-  background: #E33E5A;
-  color: #fff;
-  font-size: 16px;
+  background: #ffc6cf;
+  color: #000;
+  font-size: 17px;
   line-height: 12px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 ion-range::part(pin)::before {
@@ -83,6 +89,18 @@ ion-range::part(bar-active) {
   background: linear-gradient(90deg, rgba(60,46,136,1) 0%, rgba(227,62,90,1) 100%);
 }
 
+.slider-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #7b7b7b;
+
+  &.start {
+    margin-right: 25px;
+  }
+  &.end {
+    margin-left: 25px;
+  }
+}
 
 // Holder value
 

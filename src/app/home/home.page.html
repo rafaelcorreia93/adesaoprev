@@ -25,6 +25,10 @@
       [value]="percentual"
       (ionInput)="onIonInput($event)"
       (ionChange)="onIonChange()"
-    ></ion-range>
+      [pin]="true" [pinFormatter]="pinFormatter"
+    >
+    <label slot="start" class="slider-label start" name="min">0,1%</label>
+    <label slot="end" class="slider-label end" name="max">4%</label>
+  </ion-range>
   </div>
 </ion-content>
