@@ -58,7 +58,7 @@ ion-range {
 
 ion-range::part(pin) {
   background: #ffc6cf;
-  color: #000;
+  color: #832648;
   font-size: 17px;
   line-height: 12px;
   font-family: "Open Sans", sans-serif;
@@ -68,6 +68,7 @@ ion-range::part(pin) {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  border-radius: 300px;
 }
 
 ion-range::part(pin)::before {
@@ -100,6 +101,10 @@ ion-range::part(bar-active) {
   &.end {
     margin-left: 25px;
   }
+}
+
+.range-pin {
+  border-radius: 300px;
 }
 
 // Holder value
