@@ -146,3 +146,31 @@ input {
   color: #333;
   letter-spacing: 2px;
 }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 17px;
+  background: #E9E9F5;
+  padding: 0;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background: green;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #E33E5A;
+  box-shadow: 6px 4px 13px 5px rgba(28, 28, 28, 0.138);
+  transition: all .3s ease-in-out;
+}
+
+  input[type="range"].pressed::-webkit-slider-thumb {
+    box-shadow: none;
+    background: #D33957;
+    transform: scale(0.8);
+  }

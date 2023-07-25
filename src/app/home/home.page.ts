@@ -28,6 +28,7 @@ export class HomePage {
   pinFormatter(value: number) {
     return `${value}`;
   }
+  valor = 1;
 
   onIonInput(ev: Event) {
     this.lastEmittedValue = (ev as RangeCustomEvent).detail.value;
@@ -35,5 +36,14 @@ export class HomePage {
 
   onIonChange() {
     this.contribuicao = this.currency.transform(this.salario * (this.percentual/100), 'R$')!;
+  }
+
+  rangeChange(event: number) {
+    this.valor = event;
+    document.getElementById('contribuicao')?.classList.remove('pressed');
+  }
+
+  removePress() {
+    document.getElementById('contribuicao')?.classList.add('pressed');
   }
 }
